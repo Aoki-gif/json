@@ -23,27 +23,35 @@ export default function App() {
 
   return (
     // <div className="App" style={mainStyle}>
-    <>
-      {childrenItems.map((object, index) => {
-        const ItemsStyleInf = {
+    childrenItems.map((object, index) => {
+      let ItemsStyleInf;
+      if (index === 0) {
+        ItemsStyleInf = {
+          height: object.height,
+          width: object.width,
+          border: "solid",
+          position: "relative"
+        };
+      } else {
+        ItemsStyleInf = {
           x: (object.x / metaData.width) * width,
           y: (object.y / metaData.height) * height,
           height: object.height,
           width: object.width,
           border: "solid",
-          position: "absolute"
+          position: "absolute",
+          top: (object.y / metaData.height) * height,
+          left: (object.x / metaData.width) * width
         };
-        console.log(ItemsStyleInf);
-        index === 0
-          ? (ItemsStyleInf.position = "relative")
-          : (ItemsStyleInf.position = "absolute");
-        return (
-          <div style={ItemsStyleInf}>
-            <p>{object.text}</p>
-          </div>
-        );
-      })}
-    </>
+      }
+      //console.log(ItemsStyleInf);
+      console.log(object.text);
+      return (
+        <div style={ItemsStyleInf}>
+          {object.text ? <p>{object.text}</p> : undefined}
+        </div>
+      );
+    })
   );
 }
 
