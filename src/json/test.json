@@ -1,0 +1,60 @@
+{
+  "height": 500.0,
+  "width": 300.0,
+  "children": [
+    {
+      "position": {
+        "x": 10.0,
+        "y": 10.0
+      },
+      "height": 5.0,
+      "width": 5.0,
+      "value": "aaaaaaa",
+      "borders": {
+        "top": {
+          "lineStyle": "style",
+          "strokeWeight": 5.0
+        },
+        "bottom": {
+          "lineStyle": "style",
+          "strokeWeight": 5.0
+        },
+        "left": {
+          "lineStyle": "style",
+          "strokeWeight": 5.0
+        },
+        "right": {
+          "lineStyle": "style",
+          "strokeWeight": 5.0
+        }
+      }
+    },
+    {
+      "position": {
+        "x": 150.0,
+        "y": 150.0
+      },
+      "height": 300.0,
+      "width": 300.0,
+      "value": "とれているよなぁ！？",
+      "borders": {
+        "top": {
+          "lineStyle": "style",
+          "strokeWeight": 0.0
+        },
+        "bottom": {
+          "lineStyle": "style",
+          "strokeWeight": 0.0
+        },
+        "left": {
+          "lineStyle": "style",
+          "strokeWeight": 0.0
+        },
+        "right": {
+          "lineStyle": "style",
+          "strokeWeight": 0.0
+        }
+      }
+    }
+  ]
+}
